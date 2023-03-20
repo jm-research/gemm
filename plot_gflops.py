@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+
 # Indicate the number of floating point operations that can be executed
 # per clock cycle
 nflops_per_cycle = 4
