@@ -5,7 +5,11 @@
 #include <iostream>
 
 #include "MMult0.h"
+#if 0
 #include "MMult1.h"
+#else
+#include "MMult2.h"
+#endif
 #include "util.h"
 
 int main() {
@@ -37,17 +41,17 @@ int main() {
 
     copy_matrix(m, n, prec, ldc, nowc, ldc);
 
-    std::cout << "a matrix: \n";
-    debug_print_2d_nums(a, 4, 4);
-    std::cout << "b matrix: \n";
-    debug_print_2d_nums(b, 4, 4);
-    std::cout << "c matrix: \n";
-    debug_print_2d_nums(c, 4, 4);
+    // std::cout << "a matrix: \n";
+    // debug_print_2d_nums(a, 4, 4);
+    // std::cout << "b matrix: \n";
+    // debug_print_2d_nums(b, 4, 4);
+    // std::cout << "c matrix: \n";
+    // debug_print_2d_nums(c, 4, 4);
 
     MatrixMultiply(m, n, k, a, lda, b, ldb, nowc, ldc);
 
-    std::cout << "nowc matrix: \n";
-    debug_print_2d_nums(nowc, 4, 4);
+    // std::cout << "nowc matrix: \n";
+    // debug_print_2d_nums(nowc, 4, 4);
 
     for (int j = 0; j < 20; ++j) {
       copy_matrix(m, n, prec, ldc, c, ldc);
