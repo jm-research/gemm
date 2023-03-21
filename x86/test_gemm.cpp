@@ -10,8 +10,9 @@
 #include "MMult2.h"
 #include "MMult_1x4_3.h"
 #include "MMult_1x4_4.h"
-#else
 #include "MMult_1x4_5.h"
+#else
+#include "MMult_1x4_6.h"
 #endif
 #include "util.h"
 
@@ -23,7 +24,7 @@ int main() {
   double gflops, time_tmp, time_best, diff;
   float *a, *b, *c, *prec, *nowc;
 
-  for (int i = 40; i <= 500; i += 40) {
+  for (int i = 40; i <= 1000; i += 40) {
     m = i;
     n = i;
     k = i;
