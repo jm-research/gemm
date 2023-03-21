@@ -7,8 +7,9 @@
 #include "MMult0.h"
 #if 0
 #include "MMult1.h"
-#else
 #include "MMult2.h"
+#else
+#include "MMult_1x4_3.h"
 #endif
 #include "util.h"
 
