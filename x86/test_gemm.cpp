@@ -9,8 +9,9 @@
 #include "MMult1.h"
 #include "MMult2.h"
 #include "MMult_1x4_3.h"
-#else
 #include "MMult_1x4_4.h"
+#else
+#include "MMult_1x4_5.h"
 #endif
 #include "util.h"
 
