@@ -2,8 +2,8 @@
 
 ref:
 
-[how-to-optimize-gemm](https://github.com/flame/how-to-optimize-gemm)
-[OpenBLAS gemm从零入门](https://zhuanlan.zhihu.com/p/65436463)
+- [how-to-optimize-gemm](https://github.com/flame/how-to-optimize-gemm)
+- [OpenBLAS gemm从零入门](https://zhuanlan.zhihu.com/p/65436463)
 
 ## 1. MMult0 到 MMult1
 
