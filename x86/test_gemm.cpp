@@ -12,7 +12,7 @@
 #include "MMult_1x4_4.h"
 #include "MMult_1x4_5.h"
 #else
-#include "MMult_1x4_10.h"
+#include "MMult_1x4_11.h"
 #endif
 #include "util.h"
 
