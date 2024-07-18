@@ -97,7 +97,7 @@ void AddDot4x4(int k, float *a, int lda, float *b, int ldb, float *c, int ldc) {
   C(3, 3) += c_p3_sum.d[3];
 }
 
-void MY_MMult_4x4_10(int m, int n, int k, float *a, int lda, float *b, int ldb,
+void MatrixMul(int m, int n, int k, float *a, int lda, float *b, int ldb,
                      float *c, int ldc) {
   int i, j;
 

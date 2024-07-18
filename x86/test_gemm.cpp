@@ -24,7 +24,7 @@ int main() {
   double gflops, time_tmp, time_best, diff;
   float *a, *b, *c, *prec, *nowc;
 
-  for (int i = 40; i <= 1000; i += 40) {
+  for (int i = 40; i <= 500; i += 40) {
     m = i;
     n = i;
     k = i;
@@ -61,7 +61,7 @@ int main() {
       copy_matrix(m, n, prec, ldc, c, ldc);
 
       auto before = std::chrono::system_clock::now();
-      MatrixMultiply(m, n, k, a, lda, b, ldb, c, ldc);
+      MatrixMul(m, n, k, a, lda, b, ldb, c, ldc);
       auto after = std::chrono::system_clock::now();
 
       time_tmp = time_diff(before, after);

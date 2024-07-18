@@ -80,7 +80,7 @@ void AddDot1x4(int k, float *a, int lda, float *b, int ldb, float *c, int ldc) {
   C(3, 0) += c_03_reg;
 }
 
-void MY_MMult_1x4_9(int m, int n, int k, float *a, int lda, float *b, int ldb,
+void MatrixMul(int m, int n, int k, float *a, int lda, float *b, int ldb,
                     float *c, int ldc) {
   int i, j;
 
